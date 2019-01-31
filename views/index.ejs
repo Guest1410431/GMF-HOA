@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <% include partials/_layout.ejs %>
+    <body>
+        <!--Header-->
+        <% include partials/_header.ejs %>
+        <!--Navigation Bar-->
+        <% include partials/_navigation.ejs %>
+        <div class="container">
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4 ext-center">
+                        <div id="carousel" class="carousel slide">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators hidden-xs">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active" id="img-thumbnail">
+                                    <img class="img-short" src="img/slide-1.jpg" alt="">
+                                </div>
+                                <div class="item" id="img-thumbnail">
+                                    <img class="img-responsive" src="img/slide-2.jpg" alt="">
+                                </div>
+                                <div class="item" id="img-thumbnail">
+                                    <img class="img-responsive" src="img/slide-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel" data-slide="prev">
+                                <span class="icon-prev"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel" data-slide="next">
+                                <span class="icon-next"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                         <h2 class="brand-before">
+                            <small><strong>Welcome</strong> To</small>
+                        </h2>
+                        <h1 class="brand-name">George Mason Forest</h1>
+                        <hr class="tagline-divider">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12">
+                        <hr>
+                            <h2 class="intro-text text-center"><strong>Who</strong> Are We?</h2>
+                        <hr>
+                        <div class="col-md-4 offset-md-4">
+                             <img class="img-responsive img-border" id="image-map" src="img/intro-pic.jpg" alt="">
+                        </div>
+                        <hr class="visible-xs">
+                        <p>This website is dedicated to providing the homeowners of George Mason Forest with information about
+                             our neighborhood and news of upcoming events. Whether you are looking for the covenants and by-laws,
+                             the minutes to the last GMFHOA board meeting, or are just want to check out the events calendar, our
+                             goal is to make it easier for you to find all the information you need in one location.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="box">
+                    <div class="col-lg-12">
+                        <hr>
+                            <h2 class="intro-text text-center"><strong>Contact</strong> Us</h2>
+                        <hr>
+                        <!--Check the policies page first-->
+                        <p>If you have any questions or concerns regarding any matter under the jurisdiction of the
+                        <strong>George Mason Forest HOA</strong>, please let us know by filling out the form below.</p>
+                        <p>We will get back to you in a timely manner</p>
+                        <form role="form" action="/contact" method="post">
+                            <div class="row">
+                                <div class="form-group col-lg-4">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="name">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control" name="email">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label>Phone Number <small>(Optional)</small></label>
+                                    <input type="tel" class="form-control" name="phonenumber">
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-lg-12">
+                                    <label>Message</label>
+                                    <textarea class="form-control" rows="6" name="message"></textarea>
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default" id="send-email">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+        <% include partials/_footer.ejs %>
+    </body>
+    <script>
+    $(document).ready(function(){
+        $('.carousel').carousel(5000);
+    });
+    </script>
+</html>

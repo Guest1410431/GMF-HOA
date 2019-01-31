@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <% include partials/_layout.ejs %>
+    <body>
+        <!--Header-->
+        <% include partials/_header.ejs %>
+        <!--Navigation Bar-->
+        <% include partials/_navigation.ejs %>
+        <div class="container">
+            <% include partials/_title.ejs %>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box" name="box">
+                        <hr>
+                            <h2 class="intro-text text-center"><strong>Policies</strong></h2>
+                        <hr class="visible-xs"><hr>
+                        <a href="" class="pf-list list-group-item">Architectural Control Guidelines</a>
+                        <a href="" class="pf-list list-group-item">Complaint Policy</a>
+                        <a href="" class="pf-list list-group-item">Email Alert Policy</a>
+                        <a href="" class="pf-list list-group-item">Grounds Policy</a>
+                        <a href="" class="pf-list list-group-item">Procurement of Vendor Services Policy</a>
+                        <a href="" class="pf-list list-group-item">Use of GMFHOA Newsletter Policy</a>
+                        <a href="" class="pf-list list-group-item">Use of Governing Documents Policy</a>
+                        <a href="" class="pf-list list-group-item">Use of Phone Directory Policy</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box" name="box">
+                        <hr>
+                            <h2 class="intro-text text-center"><strong>Requests</strong></h2>
+                        <hr class="visible-xs"><hr>
+                        <a class="pf-list list-group-item">Architectural Controls Committee Application Form</a>
+                        <a class="pf-list list-group-item">Complaint Form</a>
+                        <a class="pf-list list-group-item">Disclosure (Resale) Package Request Form</a>
+                        <a class="pf-list list-group-item">Form for Owners Reporting Property Rental</a>
+                        <a class="pf-list list-group-item">General Complaint Form</a>
+                        <a class="pf-list list-group-item">Request for Association Records</a>
+                        <a class="pf-list list-group-item">Request to Cut/Trim Trees in the Common and RPA Areas</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box" name="box">
+                        <hr>
+                            <h2 class="intro-text text-center"><strong>Procedures</strong></h2>
+                        <hr class="visible-xs"><hr>
+                        <a class="pf-list list-group-item">Complaint Procedure</a>
+                        <a class="pf-list list-group-item">Late and Non-Payment of Annual Assessment Procedure</a>
+                        <a class="pf-list list-group-item">Obtaining Rental Information from Owners</a>
+                        <a class="pf-list list-group-item">Use of Election Officers or Inspectors</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% include partials/_footer.ejs %>
+    </body>
+    <script>
+    $(document).ready(function(){
+        var high = 0;
+
+        $('div[name=box]').each(function(){
+            var h = $(this).outerHeight(true);
+
+            if(h > high){
+                high = h;
+            }
+        });
+        $('div[name=box]').each(function(){
+            $(this).css("height", high);
+        });
+    });
+    </script>
+</html>

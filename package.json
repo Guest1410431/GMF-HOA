@@ -1,0 +1,28 @@
+{
+  "name": "email-node",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^4.2.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "ejs": "^2.6.1",
+    "express": "^3.21.2",
+    "express-generator": "^4.16.0",
+    "formidable": "^1.1.1",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.3",
+    "nodemailer": "latest",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "Sends email form via Node.js",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Gues",
+  "license": "ISC"
+}
