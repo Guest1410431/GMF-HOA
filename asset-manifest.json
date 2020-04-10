@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gmf-hoa/static/css/main.5f361e03.chunk.css",
+    "main.js": "/gmf-hoa/static/js/main.41df3367.chunk.js",
+    "main.js.map": "/gmf-hoa/static/js/main.41df3367.chunk.js.map",
+    "runtime-main.js": "/gmf-hoa/static/js/runtime-main.46977ae5.js",
+    "runtime-main.js.map": "/gmf-hoa/static/js/runtime-main.46977ae5.js.map",
+    "static/js/2.8df4c02b.chunk.js": "/gmf-hoa/static/js/2.8df4c02b.chunk.js",
+    "static/js/2.8df4c02b.chunk.js.map": "/gmf-hoa/static/js/2.8df4c02b.chunk.js.map",
+    "index.html": "/gmf-hoa/index.html",
+    "precache-manifest.236ba694ce9bd92e3c3b01877117e0b9.js": "/gmf-hoa/precache-manifest.236ba694ce9bd92e3c3b01877117e0b9.js",
+    "service-worker.js": "/gmf-hoa/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/gmf-hoa/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.8df4c02b.chunk.js.LICENSE.txt": "/gmf-hoa/static/js/2.8df4c02b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/gmf-hoa/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46977ae5.js",
+    "static/js/2.8df4c02b.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.41df3367.chunk.js"
+  ]
+}
